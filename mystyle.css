@@ -4,5 +4,10 @@ body {
 
 h1 {
     color: darkblue;
-    margin-left: 20px;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
