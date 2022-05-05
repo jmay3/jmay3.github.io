@@ -10,32 +10,74 @@ h1 {
 
 p {
     text-align: center;
-    animation: fadeInAnimation ease 3s;
+    animation: FadeIn ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .social-buttons-div {
     text-align: center;
     padding-top: 1vh;
-    animation: fadeInAnimation ease 3;
+    animation: FadeIn ease 3;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .btn-social {
     color: darkblue;
     background-color: antiquewhite;
     border: none;
+    animation: FadeIn ease 3;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .btn-social:hover {
     color: black;
 }
+
+
+@keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
