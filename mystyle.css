@@ -10,7 +10,7 @@ h1 {
 
 p {
     text-align: center;
-    animation: fadeInAnimation ease 4s;
+    animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -22,4 +22,18 @@ p {
     100% {
         opacity: 1;
     }
+}
+
+.social-buttons-div {
+    text-align: center;
+}
+
+.btn-twitter {
+    color: darkblue;
+    background-color: antiquewhite;
+    border: none;
+}
+
+.btn-twitter:hover {
+    color: black;
 }
