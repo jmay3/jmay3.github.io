@@ -26,14 +26,15 @@ p {
 
 .social-buttons-div {
     text-align: center;
+    padding-top: 1vh;
 }
 
-.btn-twitter {
+.btn-social {
     color: darkblue;
     background-color: antiquewhite;
     border: none;
 }
 
-.btn-twitter:hover {
+.btn-social:hover {
     color: black;
 }
