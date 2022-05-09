@@ -1,0 +1,16 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: darkblue;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.horizontal_div {
+    margin-top: 30vh;
+    color: darkblue;
+    width: 800px;
+    height: 100px;
+}
