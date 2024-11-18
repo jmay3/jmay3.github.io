@@ -7,7 +7,6 @@
         <meta name="description" content="Jacob May - Remote sensing, engineering, and programming professional">
         <title>Jacob May</title>
 
-
         <!-- Google Analytics tracking code -->
 	    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3X59X0ZMY"></script>
 	    <script>
@@ -22,7 +21,7 @@
         <h1>
             Jacob May
         </h1>
-        <p>
+        <p class="subtitle">
             remote sensing / engineering / programming
         </p>
         <p>
@@ -52,5 +51,53 @@
             </button>
         </div>
         
+        <div class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Arctic Pond Segmentation using a UNet</h3>
+                        <p class="project-description">comming soon</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                    <img src="img/pond_result.jpg" alt="Project 1" class="project-image">
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Project 2</h3>
+                        <p class="project-description">comming soon</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                    <img src="path/to/your/image2.jpg" alt="Project 2" class="project-image">
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Project 3</h3>
+                        <p class="project-description">comming soon</p>
+                        <a href="#" class="project-link">Learn More</a>
+                    </div>
+                    <img src="path/to/your/image3.jpg" alt="Project 3" class="project-image">
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear"></span> Jacob May. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.project-card').forEach((card) => {
+                observer.observe(card);
+            });
+        </script>
     </body>
 </html>
